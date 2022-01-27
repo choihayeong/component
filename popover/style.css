@@ -1,0 +1,36 @@
+/* reset */
+* {margin:0;padding:0;box-sizing:border-box}
+body, button, input, select, textarea, th, td {font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:16px;line-height:1.5}
+button {border:0 none;background:transparent;outline:none;cursor:pointer}
+/* common */
+.wrap {max-width:750px;margin:0 auto;padding:0 20px}
+.content {margin:60px 0}
+.content h2 {margin-bottom:30px;text-align:center}
+.component-wrap {padding:30px;border:2px solid #5a5aff}
+/* button */
+.btn {padding:0.375rem 0.75rem;border-radius:0.25rem;background-color:#5a5aff;color:#fff}
+.btn:hover, .btn:focus {background-color:#5050e0}
+.btn:focus {box-shadow:0 0 0 0.2rem rgba(90, 90, 255, 0.5)}
+.btn--primary {background-color:#5a5aff}
+.btn--primary:focus {box-shadow:0 0 0 0.2rem rgba(90, 90, 255, 0.5)}
+.btn--secondary {background-color:#6f6f85}
+.btn--secondary:hover, .btn--secondary:focus {background-color:#5b5b6d}
+.btn--secondary:focus {box-shadow:0 0 0 0.2rem rgba(111, 111, 133, 0.5)}
+/* popover */
+.popover {position: absolute;top: 0;left: 0;z-index: 1060;display: block;max-width:276px;border:1px solid rgba(0, 0, 0, 0.2);border-radius:0.3rem;background-color:#fff;font-size:0.875rem;background-clip:padding-box}
+.popover .arrow {position:absolute;display:block;width:1rem;height:0.5rem}
+[data-placement="top"].popover .arrow {bottom:-0.5rem;left:50%;transform:translateX(-50%)}
+[data-placement="bottom"].popover .arrow {top:-0.5rem;left:50%;transform:translateX(-50%)}
+[data-placement="right"].popover .arrow {top:50%;left:-0.5rem;margin-top:-8px}
+[data-placement="left"].popover .arrow {top:50%;right:-1rem;margin-top:-8px}
+.popover .arrow::before {content:'';position:absolute;display:block;border-color:transparent;border-style:solid}
+.popover .arrow::after {content:'';position:absolute;display:block;border-color:transparent;border-style:solid}
+[data-placement="top"].popover .arrow::before {border-width:0.5rem 0.5rem 0;border-top-color:#000}
+[data-placement="top"].popover .arrow::after {border-width:0.5rem 0.5rem 0;border-top-color:#fff}
+[data-placement="bottom"].popover .arrow::before {border-width:0 0.5rem 0.5rem 0.5rem;border-bottom-color:#000}
+[data-placement="bottom"].popover .arrow::after {border-width:0 0.5rem 0.5rem 0.5rem;border-bottom-color:#fff}
+[data-placement="right"].popover .arrow::before {border-width: 0.5rem 0.5rem 0.5rem 0;border-right-color:#000}
+[data-placement="right"].popover .arrow::after {border-width: 0.5rem 0.5rem 0.5rem 0;border-right-color:#fff}
+[data-placement="left"].popover .arrow::before {border-width: 0.5rem 0 0.5rem 0.5rem;border-left-color:#000}
+[data-placement="left"].popover .arrow::after {border-width: 0.5rem 0 0.5rem 0.5rem;border-left-color:#fff}
+.popover__body {padding:0.5rem 0.75rem;color:#212529}
