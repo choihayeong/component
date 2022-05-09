@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@font-face {
+	font-family:'Noto Sans KR';
+	font-weight:300;
+	src:
+        url(./font/NotoSans-Light.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-weight:400;
+	src:
+        url(./font/NotoSans-Regular.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-weight:500;
+	src:
+        url(./font/NotoSans-Medium.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-weight:bold;
+	src:
+        url(./font/NotoSans-Bold.woff) format('woff');
+}
+@font-face {
+	font-family:'Raleway';
+	font-weight:300;
+	src:
+        url(./font/raleway-light.woff) format('woff');
+}
+@font-face {
+	font-family:'Raleway';
+	font-weight:400;
+	src:
+        url(./font/raleway-regular.woff) format('woff');
+}
+@font-face {
+	font-family:'Raleway';
+	font-weight:500;
+	src:
+        url(./font/raleway-medium.woff) format('woff');
+}
+@font-face {
+	font-family:'Raleway';
+	font-weight:600;
+	src:
+        url(./font/raleway-semibold.woff) format('woff');
+}
+@font-face {
+	font-family:'Raleway';
+	font-weight:bold;
+	src:
+        url(./font/raleway-bold.woff) format('woff');
+}

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Component</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <h1 class="title">Personal Component</h1>
+        </header>
+        <div class="container">
+            <!-- TYPOGRAPHY -->
+            <section class="section" id="typography">
+                <h2 class="subtitle">
+                    <a href="#typography" class="location">#typography</a>
+                </h2>
+                <p class="description">
+                    font-family:'Raleway','Noto Sans KR'; <br>
+                    default(description) - font-size:16px, <br>
+                    heading1(title) - font-size:36px, <br>
+                    heading2(subtitle) - font-size:24px, <br>
+                    muted-text(muted) - color:#666
+                </p>
+
+                <div class="result">
+                    <h3 class="result__heading">
+                        Example
+                    </h3>
+                    <div class="result__item">
+                        <h1 class="title">Main Title(Logo)</h1>
+                    </div>
+                    <div class="result__item">
+                        <h2 class="subtitle">Sub title</h2>
+                    </div>
+                    <div class="result__item">
+                        <p class="description">
+                            Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus hic culpa! Saepe, cupiditate ipsam. Beatae molestiae sit quasi officia eos, enim, mollitia repudiandae necessitatibus dignissimos quibusdam hic a! Suscipit?
+                        </p>
+                    </div>
+                    <div class="result__item">
+                        <p class="description description--muted">
+                            Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non omnis doloribus vitae vel adipisci odio delectus, reprehenderit ipsum officiis inventore atque accusamus nobis perferendis iure cupiditate nemo eius praesentium.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- code -->
+                <div style="display:none">
+                    <pre>
+                        <code>
+                            <h1 class="title">Heading 1</h1>
+                            <h2 class="subtitle">Heading 2</h2>
+                            <p class="description">
+                                Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus hic culpa! Saepe, cupiditate ipsam. Beatae molestiae sit quasi officia eos, enim, mollitia repudiandae necessitatibus dignissimos quibusdam hic a! Suscipit?
+                            </p>
+                            <p class="description description--muted">
+                                Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non omnis doloribus vitae vel adipisci odio delectus, reprehenderit ipsum officiis inventore atque accusamus nobis perferendis iure cupiditate nemo eius praesentium.
+                            </p>
+                        </code>
+                    </pre>
+                </div>
+                <!-- //code -->
+            </section>
+            <!-- // -->
+            <!-- TABLES -->
+            <section class="section" id="tables">
+                <h2 class="subtitle">
+                    <a href="#tables" class="location">#tables</a>
+                </h2>
+                <p class="description">
+                    table 태그 안에 caption태그를 넣는다. <br>
+                </p>
+
+                <div class="result">
+                    <h3 class="result__heading">
+                        Default Table
+                    </h3>
+                    <div class="table-wrap">
+                        <table class="table">
+                            <caption>Default Table</caption>
+                            <colgroup>
+                                <col style="width:10%">
+                                <col style="width:30%">
+                                <col style="width:30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Job</th>
+                                    <th scope="col">Roommate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Elenor</td>
+                                    <td>Sales Person</td>
+                                    <td>@Chidi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Chidi</td>
+                                    <td>Professor</td>
+                                    <td>@Elenor</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Tahani</td>
+                                    <td>Jonalist</td>
+                                    <td>@Jason</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jason</td>
+                                    <td>Electronic DJ</td>
+                                    <td>@Tahani</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total 4</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="result">
+                    <h3 class="result__heading">
+                        Striped Table
+                    </h3>
+                    <div class="table-wrap">
+                        <table class="table table--striped">
+                            <caption>Striped Table</caption>
+                            <colgroup>
+                                <col style="width:10%">
+                                <col style="width:30%">
+                                <col style="width:30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Job</th>
+                                    <th scope="col">Roommate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Elenor</td>
+                                    <td>Sales Person</td>
+                                    <td>@Chidi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Chidi</td>
+                                    <td>Professor</td>
+                                    <td>@Elenor</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Tahani</td>
+                                    <td>Jonalist</td>
+                                    <td>@Jason</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jason</td>
+                                    <td>Electronic DJ</td>
+                                    <td>@Tahani</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total 4</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="result">
+                    <h3 class="result__heading">
+                        Hoverable Table
+                    </h3>
+                    <div class="table-wrap">
+                        <table class="table table--hover">
+                            <caption>Table Caption</caption>
+                            <colgroup>
+                                <col style="width:10%">
+                                <col style="width:30%">
+                                <col style="width:30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Job</th>
+                                    <th scope="col">Roommate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Elenor</td>
+                                    <td>Sales Person</td>
+                                    <td>@Chidi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Chidi</td>
+                                    <td>Professor</td>
+                                    <td>@Elenor</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Tahani</td>
+                                    <td>Jonalist</td>
+                                    <td>@Jason</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jason</td>
+                                    <td>Electronic DJ</td>
+                                    <td>@Tahani</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total 4</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- code -->
+                <div style="display:none">
+                    <pre>
+                        <code>
+                            <!-- default table -->
+                            <div class="table-wrap">
+                                <table class="table">
+                                    <caption>Deafult Table</caption>
+                                    <colgroup>
+                                        <col style="width:10%">
+                                        <col style="width:30%">
+                                        <col style="width:30%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Job</th>
+                                            <th scope="col">Roommate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Elenor</td>
+                                            <td>Sales Person</td>
+                                            <td>@Chidi</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Chidi</td>
+                                            <td>Professor</td>
+                                            <td>@Elenor</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Tahani</td>
+                                            <td>Jonalist</td>
+                                            <td>@Jason</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Jason</td>
+                                            <td>Electronic DJ</td>
+                                            <td>@Tahani</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row">Total 4</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- // -->
+                            <!-- striped table -->
+                            <div class="table-wrap">
+                                <table class="table table--striped">
+                                    <caption>Striped Table</caption>
+                                    <colgroup>
+                                        <col style="width:10%">
+                                        <col style="width:30%">
+                                        <col style="width:30%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Job</th>
+                                            <th scope="col">Roommate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Elenor</td>
+                                            <td>Sales Person</td>
+                                            <td>@Chidi</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Chidi</td>
+                                            <td>Professor</td>
+                                            <td>@Elenor</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Tahani</td>
+                                            <td>Jonalist</td>
+                                            <td>@Jason</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Jason</td>
+                                            <td>Electronic DJ</td>
+                                            <td>@Tahani</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row">Total 4</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- // -->
+                            <!-- hoverable table -->
+                            <div class="table-wrap">
+                                <table class="table table--hover">
+                                    <caption>Hoverable table</caption>
+                                    <colgroup>
+                                        <col style="width:10%">
+                                        <col style="width:30%">
+                                        <col style="width:30%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Job</th>
+                                            <th scope="col">Roommate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Elenor</td>
+                                            <td>Sales Person</td>
+                                            <td>@Chidi</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Chidi</td>
+                                            <td>Professor</td>
+                                            <td>@Elenor</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Tahani</td>
+                                            <td>Jonalist</td>
+                                            <td>@Jason</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Jason</td>
+                                            <td>Electronic DJ</td>
+                                            <td>@Tahani</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row">Total 4</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- // -->
+                        </code>
+                    </pre>
+                </div>
+                <!-- //code -->
+            </section>
+            <!-- // -->
+            <!-- FORMS -->
+            <section class="section" id="forms">
+                <h2 class="subtitle">
+                    <a href="#forms" class="location">#forms</a>
+                </h2>
+                <p class="decription">
+                    form 태그 안에 fieldset 태그를 넣고 fieldset에는 legend를 넣는다.
+                </p>
+
+                <div class="result">
+                    <h3 class="result__heading">
+                        Default Form
+                    </h3>
+                    <form class="form">
+                        <fieldset>
+                            <legend>Default Form</legend>
+                            <div class="form__group">
+                                <label for="iptEmail">Email</label>
+                                <input type="email" name="" id="iptEmail" class="ipt ipt--email" placeholder="apple123@hosting.com">
+                            </div>
+                            <div class="form__group">
+                                <label for="iptPwd">Password</label>
+                                <input type="password" name="" id="iptPwd" class="ipt ipt--pwd" placeholder="Enter your password(8-12)">
+                                <p class="form__guide">Enter 8-12 mixed digit numbers, a-z alphabets</p>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="" id="iptChk" class="chk">
+                                <label for="iptChk">Just Check it. Nothing's gonna happend :P</label>
+                            </div>
+                        </fieldset>
+                        <input type="submit" class="ipt ipt--submit" value="submit">
+                    </form>
+                </div>
+
+                <div class="result">
+                    <h3 class="result__heading">
+                        Disabled Form
+                    </h3>
+                    <form class="form">
+                        <fieldset>
+                            <legend>Disabled Form</legend>
+                            <div class="form__group">
+                                <label for="iptDText">Disabled input</label>
+                                <input type="text" name="" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
+                            </div>
+                            <div class="form__group">
+                                <label for="sltD">Disabled Selectbox</label>
+                                <select name="" id="sltD" class="slt" disabled>
+                                    <option value="default">Default Value</option>
+                                    <option value="1">#1</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="" id="iptDChk" class="chk" disabled>
+                                <label for="iptDChk">Disabled Checkbox</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="" id="iptDChked" class="chk" checked disabled>
+                                <label for="iptDChked">Disabled Checkbox - checked</label>
+                            </div>
+                        </fieldset>
+                        <input type="submit" class="ipt ipt--submit" value="submit" disabled>
+                    </form>
+                </div>
+
+                <!-- readonly, file input, datalist, textarea -->
+                <div class="result">
+                    <h3 class="result__heading">
+                        readonly, file input, datalist, textarea
+                    </h3>
+                    <form class="form">
+                        <fieldset>
+                            <legend>Disabled Form</legend>
+                            <div class="form__group">
+                                <label for="iptDText">Disabled input</label>
+                                <input type="text" name="" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
+                            </div>
+                            <div class="form__group">
+                                <label for="sltD">Disabled Selectbox</label>
+                                <select name="" id="sltD" class="slt" disabled>
+                                    <option value="default">Default Value</option>
+                                    <option value="1">#1</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="" id="iptDChk" class="chk" disabled>
+                                <label for="iptDChk">Disabled Checkbox</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="" id="iptDChked" class="chk" checked disabled>
+                                <label for="iptDChked">Disabled Checkbox - checked</label>
+                            </div>
+                        </fieldset>
+                        <input type="submit" class="ipt ipt--submit" value="submit" disabled>
+                    </form>
+                </div>
+
+                <!-- code -->
+                <div style="display:none">
+                    <pre>
+                        <code>
+                            <!-- default -->
+                            <form class="form">
+                                <fieldset>
+                                    <legend>Default Form</legend>
+                                    <div class="form__group">
+                                        <label for="iptEmail">Email</label>
+                                        <input type="email" name="" id="iptEmail" class="ipt ipt--email" placeholder="apple123@hosting.com">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="iptPwd">Password</label>
+                                        <input type="password" name="" id="iptPwd" class="ipt ipt--pwd" placeholder="Enter your password(8-12)">
+                                        <p class="form__guide">Enter 8-12 mixed digit numbers, a-z alphabets</p>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="checkbox" name="" id="iptChk" class="chk">
+                                        <label for="iptChk">Just Check it. Nothing's gonna happend :P</label>
+                                    </div>
+                                </fieldset>
+                                <input type="submit" class="ipt ipt--submit" value="submit">
+                            </form>
+                            <!-- // -->
+                            <!-- disabled -->
+                            <form class="form">
+                                <fieldset>
+                                    <legend>Disabled Form</legend>
+                                    <div class="form__group">
+                                        <label for="iptDText">Disabled input</label>
+                                        <input type="text" name="" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="sltD">Disabled Selectbox</label>
+                                        <select name="" id="sltD" class="slt" disabled>
+                                            <option value="default">Default Value</option>
+                                            <option value="1">#1</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="checkbox" name="" id="iptDChk" class="chk" disabled>
+                                        <label for="iptDChk">Disabled Checkbox</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="checkbox" name="" id="iptDChked" class="chk" checked disabled>
+                                        <label for="iptDChked">Disabled Checkbox - checked</label>
+                                    </div>
+                                </fieldset>
+                                <input type="submit" class="ipt ipt--submit" value="submit" disabled>
+                            </form>
+                            <!-- // -->
+                        </code>
+                    </pre>
+                </div>
+                <!-- //code -->
+            </section>
+            <!-- // -->
+            <!-- ACCORDION -->
+            <section class="section" id="accordion">
+                <h2 class="subtitle">
+                    <a href="#accordion" class="location">#accordion</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
+            <!-- // -->
+            <!-- BREADCURMB -->
+            <section class="section" id="breadcrumb">
+                <h2 class="subtitle">
+                    <a href="#breadcrumb" class="location">#breadcrumb</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
+            <!-- // -->
+            <!-- BUTTONS -->
+            <!-- // -->
+            <!-- DROPDOWN -->
+            <!-- // -->
+            <!-- LIST -->
+            <!-- // -->
+            <!-- MODAL -->
+            <!-- // -->
+            <!-- NAVIGATION -->
+            <!-- // -->
+            <!-- TAB -->
+            <!-- // -->
+            <!-- POPOVER -->
+            <section class="section" id="popover">
+                <h2 class="subtitle">
+                    <a href="#popover" class="location">#popover</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
+            <!-- // -->
+            <!-- TOAST -->
+            <!-- // -->
+            <!-- REF -->
+            <section class="section" id="reference">
+                <h2 class="subtitle">
+                    <a href="#reference" class="location">#reference</a>
+                </h2>
+
+                <div class="">
+                    <p>
+                        컴포넌트 순서 참고 : Bootstrap v5.1 (<a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">https://getbootstrap.com/docs/5.1/getting-started/introduction/</a>)
+                    </p>
+                    <p>
+                        웹 접근성 관련 색상 참고: Material Design (<a href="https://material.io/resources/color/#!/?view.left=0&view.right=0" target="_blank">https://material.io/resources/color/#!/?view.left=0&view.right=0</a>)
+                    </p>
+                </div>
+            </section>
+            <!-- // -->
+        </div>
+        <footer id="footer" class="footer">
+
+        </footer>
+    </div>
+
+    <script src="./scripts/common.js"></script>
+</body>
+</html>
