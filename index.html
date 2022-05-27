@@ -443,16 +443,45 @@
                             <legend>Default Form</legend>
                             <div class="form__group">
                                 <label for="iptEmail">Email</label>
-                                <input type="email" name="" id="iptEmail" class="ipt ipt--email" placeholder="apple123@hosting.com">
+                                <input type="email" id="iptEmail" class="ipt ipt--email" placeholder="apple123@hosting.com">
                             </div>
                             <div class="form__group">
                                 <label for="iptPwd">Password</label>
-                                <input type="password" name="" id="iptPwd" class="ipt ipt--pwd" placeholder="Enter your password(8-12)">
-                                <p class="form__guide">Enter 8-12 mixed digit numbers, a-z alphabets</p>
+                                <input type="password" id="iptPwd" class="ipt ipt--pwd" placeholder="Enter your password(8-12)">
+                                <p class="form__guide">Form guide: Enter 8-12 mixed digit numbers, a-z alphabets</p>
                             </div>
                             <div class="form__group">
-                                <input type="checkbox" name="" id="iptChk" class="chk">
-                                <label for="iptChk">Just Check it. Nothing's gonna happend :P</label>
+                                <label for="slt">Default Selectbox</label>
+                                <select id="slt" class="slt">
+                                    <option value="default" selected>Select your city</option>
+                                    <option value="seoul">Seoul</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="Toronto">Toronto</option>
+                                </select>
+                            </div>
+                            <div class="form__group form__group--file">
+                                <span>File Input</span>
+                                <input type="file" id="iptFile" class="ipt-file">
+                                <label for="iptFile">파일을 선택하세여</label>
+                            </div>
+                            <div class="form__group">
+                                <label for="ta">Textarea</label>
+                                <textarea id="ta" class="ta" placeholder="This is textarea part"></textarea>
+                            </div>
+                            <div class="form-radio">
+                                <span class="form-radio__label">Radio Buttons</span>
+                                <div class="form__group form__group--radio">
+                                    <input type="radio" name="defaultRadio" id="radio01" class="radio" checked>
+                                    <label for="radio01">Metropolitan 🌁</label>
+                                </div>
+                                <div class="form__group form__group--radio">
+                                    <input type="radio" name="defaultRadio" id="radio02" class="radio">
+                                    <label for="radio02">Rural ⛺</label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" id="iptChk" class="chk">
+                                <label for="iptChk">Just Check it. Nothing's gonna happened :P</label>
                             </div>
                         </fieldset>
                         <input type="submit" class="ipt ipt--submit" value="submit">
@@ -468,21 +497,43 @@
                             <legend>Disabled Form</legend>
                             <div class="form__group">
                                 <label for="iptDText">Disabled input</label>
-                                <input type="text" name="" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
+                                <input type="text" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
                             </div>
                             <div class="form__group">
                                 <label for="sltD">Disabled Selectbox</label>
-                                <select name="" id="sltD" class="slt" disabled>
-                                    <option value="default">Default Value</option>
-                                    <option value="1">#1</option>
+                                <select id="sltD" class="slt" disabled>
+                                    <option value="default" selected>Select your city</option>
+                                    <option value="seoul">Seoul</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="Toronto">Toronto</option>
                                 </select>
                             </div>
                             <div class="form__group">
-                                <input type="checkbox" name="" id="iptDChk" class="chk" disabled>
+                                <span>File Input</span>
+                                <input type="file" id="iptFileD" class="ipt-file" disabled>
+                                <label for="iptFileD">파일을 선택하세여</label>
+                            </div>
+                            <div class="form__group">
+                                <label for="taD">Textarea</label>
+                                <textarea id="taD" class="ta" placeholder="This is textarea part" disabled></textarea>
+                            </div>
+                            <div class="form-radio">
+                                <span class="form-radio__label">Radio Buttons</span>
+                                <div class="form__group form__group--radio">
+                                    <input type="radio" name="defaultRadio" id="radioD01" class="radio" disabled>
+                                    <label for="radioD01">Unchecked Radio Button</label>
+                                </div>
+                                <div class="form__group form__group--radio">
+                                    <input type="radio" name="defaultRadio" id="radioD02" class="radio" disabled checked>
+                                    <label for="radioD02">Checked Radio Button</label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" id="iptDChk" class="chk" disabled>
                                 <label for="iptDChk">Disabled Checkbox</label>
                             </div>
                             <div class="form__group">
-                                <input type="checkbox" name="" id="iptDChked" class="chk" checked disabled>
+                                <input type="checkbox" id="iptDChked" class="chk" checked disabled>
                                 <label for="iptDChked">Disabled Checkbox - checked</label>
                             </div>
                         </fieldset>
@@ -490,94 +541,6 @@
                     </form>
                 </div>
 
-                <!-- readonly, file input, datalist, textarea -->
-                <div class="result">
-                    <h3 class="result__heading">
-                        readonly, file input, datalist, textarea
-                    </h3>
-                    <form class="form">
-                        <fieldset>
-                            <legend>Disabled Form</legend>
-                            <div class="form__group">
-                                <label for="iptDText">Disabled input</label>
-                                <input type="text" name="" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
-                            </div>
-                            <div class="form__group">
-                                <label for="sltD">Disabled Selectbox</label>
-                                <select name="" id="sltD" class="slt" disabled>
-                                    <option value="default">Default Value</option>
-                                    <option value="1">#1</option>
-                                </select>
-                            </div>
-                            <div class="form__group">
-                                <input type="checkbox" name="" id="iptDChk" class="chk" disabled>
-                                <label for="iptDChk">Disabled Checkbox</label>
-                            </div>
-                            <div class="form__group">
-                                <input type="checkbox" name="" id="iptDChked" class="chk" checked disabled>
-                                <label for="iptDChked">Disabled Checkbox - checked</label>
-                            </div>
-                        </fieldset>
-                        <input type="submit" class="ipt ipt--submit" value="submit" disabled>
-                    </form>
-                </div>
-
-                <!-- code -->
-                <div style="display:none">
-                    <pre>
-                        <code>
-                            <!-- default -->
-                            <form class="form">
-                                <fieldset>
-                                    <legend>Default Form</legend>
-                                    <div class="form__group">
-                                        <label for="iptEmail">Email</label>
-                                        <input type="email" name="" id="iptEmail" class="ipt ipt--email" placeholder="apple123@hosting.com">
-                                    </div>
-                                    <div class="form__group">
-                                        <label for="iptPwd">Password</label>
-                                        <input type="password" name="" id="iptPwd" class="ipt ipt--pwd" placeholder="Enter your password(8-12)">
-                                        <p class="form__guide">Enter 8-12 mixed digit numbers, a-z alphabets</p>
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="checkbox" name="" id="iptChk" class="chk">
-                                        <label for="iptChk">Just Check it. Nothing's gonna happend :P</label>
-                                    </div>
-                                </fieldset>
-                                <input type="submit" class="ipt ipt--submit" value="submit">
-                            </form>
-                            <!-- // -->
-                            <!-- disabled -->
-                            <form class="form">
-                                <fieldset>
-                                    <legend>Disabled Form</legend>
-                                    <div class="form__group">
-                                        <label for="iptDText">Disabled input</label>
-                                        <input type="text" name="" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
-                                    </div>
-                                    <div class="form__group">
-                                        <label for="sltD">Disabled Selectbox</label>
-                                        <select name="" id="sltD" class="slt" disabled>
-                                            <option value="default">Default Value</option>
-                                            <option value="1">#1</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="checkbox" name="" id="iptDChk" class="chk" disabled>
-                                        <label for="iptDChk">Disabled Checkbox</label>
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="checkbox" name="" id="iptDChked" class="chk" checked disabled>
-                                        <label for="iptDChked">Disabled Checkbox - checked</label>
-                                    </div>
-                                </fieldset>
-                                <input type="submit" class="ipt ipt--submit" value="submit" disabled>
-                            </form>
-                            <!-- // -->
-                        </code>
-                    </pre>
-                </div>
-                <!-- //code -->
             </section>
             <!-- // -->
             <!-- ACCORDION -->
@@ -587,14 +550,83 @@
                 </h2>
 
                 <div class="result">
-
+                    <ul class="accordion">
+                        <li>
+                            <div class="accordion__header">
+                                Accordion Menu #1
+                            </div>
+                            <div class="accordion__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque tempora cupiditate, impedit aliquam quas quaerat explicabo aspernatur eius, labore rem id dignissimos! Quo tenetur, adipisci quam quos blanditiis doloremque ullam.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion__header">
+                                Accordion Menu #2
+                            </div>
+                            <div class="accordion__content">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo nulla iusto laborum minus beatae soluta blanditiis quod dolorum alias atque! Soluta eum aspernatur, minus sunt accusamus impedit quas? Accusamus, voluptate?
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion__header">
+                                Accordion Menu #3
+                            </div>
+                            <div class="accordion__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, autem? Deserunt magnam eaque asperiores non consequatur delectus unde laboriosam, corporis fugit eos eius aspernatur. Praesentium, aliquam voluptatibus. Deserunt, eligendi? At!
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!-- // -->
-            <!-- BREADCURMB -->
-            <section class="section" id="breadcrumb">
+            <!-- BUTTONS -->
+            <section class="section" id="buttons">
                 <h2 class="subtitle">
-                    <a href="#breadcrumb" class="location">#breadcrumb</a>
+                    <a href="#buttons" class="location">#buttons</a>
+                </h2>
+
+                <div class="result">
+                    <h3 class="result__heading">Default Buttons</h3>
+                    <div class="result__item">
+                        <button type="button" class="btn">Default</button>
+                        <button type="button" class="btn btn--primary">Default(point-color)</button>
+                        <button type="button" class="btn btn--primary" disabled>Default(disabled)</button>
+                    </div>
+                </div>
+
+                <div class="result">
+                    <h3 class="result__heading">Block Buttons</h3>
+                    <div class="result__item">
+                        <button type="button" class="btn btn--full">Default</button>
+                        <button type="button" class="btn btn--full btn--primary">Default(point-color)</button>
+                        <button type="button" class="btn btn--full btn--primary" disabled>Default(disabled)</button>
+                    </div>
+                </div>
+
+                <div class="result">
+                    <h3 class="result__heading">Half Block Buttons</h3>
+                    <div class="result__item">
+                        <div class="btns">
+                            <button type="button" class="btn btn--half">Default</button>
+                            <button type="button" class="btn btn--half btn--primary">Default(point-color)</button>
+                        </div>
+                        <div class="btns">
+                            <button type="button" class="btn btn--half">Default</button>
+                            <button type="button" class="btn btn--half btn--primary">Default(point-color)</button>
+                            <button type="button" class="btn btn--half btn--primary" disabled>Default(disabled)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="description">
+                    *반응형, 모바일에서 Block Buttons, Half Block Buttons를 사용
+                </p>
+            </section>
+            <!-- // -->
+            <!-- DROPDOWN -->
+            <section class="section" id="dropdown">
+                <h2 class="subtitle">
+                    <a href="#dropdown" class="location">#dropdown</a>
                 </h2>
 
                 <div class="result">
@@ -602,17 +634,72 @@
                 </div>
             </section>
             <!-- // -->
-            <!-- BUTTONS -->
-            <!-- // -->
-            <!-- DROPDOWN -->
-            <!-- // -->
             <!-- LIST -->
+            <section class="section" id="list">
+                <h2 class="subtitle">
+                    <a href="#list" class="location">#list</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
             <!-- // -->
             <!-- MODAL -->
+            <section class="section" id="modal">
+                <h2 class="subtitle">
+                    <a href="#modal" class="location">#modal</a>
+                </h2>
+
+                <div class="result">
+                    <button type="button" id="btnModal" class="btn btn--primary">Popup</button>
+
+                    <div class="modal" data-modal="modal01">
+                        <div class="modal__wrap">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Modal Title</h3>
+                                <button type="button" class="btn-modal" data-modal="modal01">Close</button>
+                            </div>
+                            <div class="modal__content">
+                                <div class="modal__inner">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores exercitationem, voluptatibus ducimus distinctio illum cum deserunt nulla error accusantium aperiam repudiandae laborum, esse autem asperiores explicabo repellat amet cupiditate officia?
+                                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis quo a modi ea consequuntur exercitationem, vel provident eaque, molestiae iste dignissimos nobis dolores repellendus odio dolore maiores facere distinctio?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal__footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
             <!-- // -->
             <!-- NAVIGATION -->
+            <section class="section" id="navigation">
+                <h2 class="subtitle">
+                    <a href="#navigation" class="location">#navigation</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
             <!-- // -->
             <!-- TAB -->
+            <section class="section" id="tab">
+                <h2 class="subtitle">
+                    <a href="#tab" class="location">#tab</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
             <!-- // -->
             <!-- POPOVER -->
             <section class="section" id="popover">
@@ -626,6 +713,15 @@
             </section>
             <!-- // -->
             <!-- TOAST -->
+            <section class="section" id="toast">
+                <h2 class="subtitle">
+                    <a href="#toast" class="location">#toast</a>
+                </h2>
+
+                <div class="result">
+
+                </div>
+            </section>
             <!-- // -->
             <!-- REF -->
             <section class="section" id="reference">
