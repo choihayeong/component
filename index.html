@@ -1,56 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Component</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Components</title>
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+  </head>
+  <body>
     <div class="wrap">
-        <header id="header" class="header">
-            <h1 class="title">Personal Component</h1>
-        </header>
-        <div class="container">
-            <!-- TYPOGRAPHY -->
-            <section class="section" id="typography">
-                <h2 class="subtitle">
-                    <a href="#typography" class="location">#typography</a>
-                </h2>
-                <p class="description">
-                    font-family:'Raleway','Noto Sans KR'; <br>
-                    default(description) - font-size:16px, <br>
-                    heading1(title) - font-size:36px, <br>
-                    heading2(subtitle) - font-size:24px, <br>
-                    muted-text(muted) - color:#666
-                </p>
+      <header id="header" class="header">
+        <h1 class="title">Personal Components</h1>
+      </header>
+      <div class="container">
+        <!-- TYPOGRAPHY -->
+        <section class="section" id="typography">
+          <h2 class="subtitle">
+            <a href="#typography" class="location">#typography</a>
+          </h2>
+          <p class="description">
+            font-family:'Raleway','Pretendard'; <br />
+            default(description) - font-size:16px, <br />
+            heading1(title) - font-size:36px, <br />
+            heading2(subtitle) - font-size:24px, <br />
+            muted-text(muted) - color:#777
+          </p>
 
-                <div class="result">
-                    <h3 class="result__heading">
-                        Example
-                    </h3>
-                    <div class="result__item">
-                        <h1 class="title">Main Title(Logo)</h1>
-                    </div>
-                    <div class="result__item">
-                        <h2 class="subtitle">Sub title</h2>
-                    </div>
-                    <div class="result__item">
-                        <p class="description">
-                            Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus hic culpa! Saepe, cupiditate ipsam. Beatae molestiae sit quasi officia eos, enim, mollitia repudiandae necessitatibus dignissimos quibusdam hic a! Suscipit?
-                        </p>
-                    </div>
-                    <div class="result__item">
-                        <p class="description description--muted">
-                            Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non omnis doloribus vitae vel adipisci odio delectus, reprehenderit ipsum officiis inventore atque accusamus nobis perferendis iure cupiditate nemo eius praesentium.
-                        </p>
-                    </div>
-                </div>
+          <div class="result">
+            <h3 class="result__heading">Example</h3>
+            <div class="result__item">
+              <h1 class="title">Main Title(Logo)</h1>
+            </div>
+            <div class="result__item">
+              <h2 class="subtitle">Sub title</h2>
+            </div>
+            <div class="result__item">
+              <p class="description">
+                Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Amet necessitatibus hic culpa! Saepe, cupiditate ipsam.
+                Beatae molestiae sit quasi officia eos, enim, mollitia
+                repudiandae necessitatibus dignissimos quibusdam hic a!
+                Suscipit?
+              </p>
+            </div>
+            <div class="result__item">
+              <p class="description description--muted">
+                Muted Description: Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Enim, non omnis doloribus vitae vel adipisci
+                odio delectus, reprehenderit ipsum officiis inventore atque
+                accusamus nobis perferendis iure cupiditate nemo eius
+                praesentium.
+              </p>
+            </div>
+          </div>
 
-                <!-- code -->
-                <div style="display:none">
-                    <pre>
+          <!-- code -->
+          <div style="display: none">
+            <pre>
                         <code>
                             <h1 class="title">Heading 1</h1>
                             <h2 class="subtitle">Heading 2</h2>
@@ -62,197 +68,197 @@
                             </p>
                         </code>
                     </pre>
-                </div>
-                <!-- //code -->
-            </section>
-            <!-- // -->
-            <!-- TABLES -->
-            <section class="section" id="tables">
-                <h2 class="subtitle">
-                    <a href="#tables" class="location">#tables</a>
-                </h2>
-                <p class="description">
-                    table 태그 안에 caption태그를 넣는다. <br>
-                </p>
+          </div>
+          <!-- //code -->
+        </section>
+        <!-- // -->
+        <!-- TABLES -->
+        <section class="section" id="tables">
+          <h2 class="subtitle">
+            <a href="#tables" class="location">#tables</a>
+          </h2>
+          <p class="description">
+            table 태그 안에 caption태그를 넣는다. <br />
+          </p>
 
-                <div class="result">
-                    <h3 class="result__heading">
-                        Default Table
-                    </h3>
-                    <div class="table-wrap">
-                        <table class="table">
-                            <caption>Default Table</caption>
-                            <colgroup>
-                                <col style="width:10%">
-                                <col style="width:30%">
-                                <col style="width:30%">
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Job</th>
-                                    <th scope="col">Roommate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Elenor</td>
-                                    <td>Sales Person</td>
-                                    <td>@Chidi</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Chidi</td>
-                                    <td>Professor</td>
-                                    <td>@Elenor</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Tahani</td>
-                                    <td>Jonalist</td>
-                                    <td>@Jason</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Jason</td>
-                                    <td>Electronic DJ</td>
-                                    <td>@Tahani</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Total 4</th>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-                <div class="result">
-                    <h3 class="result__heading">
-                        Striped Table
-                    </h3>
-                    <div class="table-wrap">
-                        <table class="table table--striped">
-                            <caption>Striped Table</caption>
-                            <colgroup>
-                                <col style="width:10%">
-                                <col style="width:30%">
-                                <col style="width:30%">
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Job</th>
-                                    <th scope="col">Roommate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Elenor</td>
-                                    <td>Sales Person</td>
-                                    <td>@Chidi</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Chidi</td>
-                                    <td>Professor</td>
-                                    <td>@Elenor</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Tahani</td>
-                                    <td>Jonalist</td>
-                                    <td>@Jason</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Jason</td>
-                                    <td>Electronic DJ</td>
-                                    <td>@Tahani</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Total 4</th>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-                <div class="result">
-                    <h3 class="result__heading">
-                        Hoverable Table
-                    </h3>
-                    <div class="table-wrap">
-                        <table class="table table--hover">
-                            <caption>Table Caption</caption>
-                            <colgroup>
-                                <col style="width:10%">
-                                <col style="width:30%">
-                                <col style="width:30%">
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Job</th>
-                                    <th scope="col">Roommate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Elenor</td>
-                                    <td>Sales Person</td>
-                                    <td>@Chidi</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Chidi</td>
-                                    <td>Professor</td>
-                                    <td>@Elenor</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Tahani</td>
-                                    <td>Jonalist</td>
-                                    <td>@Jason</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Jason</td>
-                                    <td>Electronic DJ</td>
-                                    <td>@Tahani</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Total 4</th>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
+          <div class="result">
+            <h3 class="result__heading">Default Table</h3>
+            <div class="table-wrap">
+              <table class="table">
+                <caption>
+                  Default Table
+                </caption>
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 30%" />
+                  <col style="width: 30%" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Roommate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Elenor</td>
+                    <td>Sales Person</td>
+                    <td>@Chidi</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Chidi</td>
+                    <td>Professor</td>
+                    <td>@Elenor</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Tahani</td>
+                    <td>Jonalist</td>
+                    <td>@Jason</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Jason</td>
+                    <td>Electronic DJ</td>
+                    <td>@Tahani</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row">Total 4</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="result">
+            <h3 class="result__heading">Striped Table</h3>
+            <div class="table-wrap">
+              <table class="table table--striped">
+                <caption>
+                  Striped Table
+                </caption>
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 30%" />
+                  <col style="width: 30%" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Roommate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Elenor</td>
+                    <td>Sales Person</td>
+                    <td>@Chidi</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Chidi</td>
+                    <td>Professor</td>
+                    <td>@Elenor</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Tahani</td>
+                    <td>Jonalist</td>
+                    <td>@Jason</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Jason</td>
+                    <td>Electronic DJ</td>
+                    <td>@Tahani</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row">Total 4</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="result">
+            <h3 class="result__heading">Hoverable Table</h3>
+            <div class="table-wrap">
+              <table class="table table--hover">
+                <caption>
+                  Table Caption
+                </caption>
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 30%" />
+                  <col style="width: 30%" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Job</th>
+                    <th scope="col">Roommate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Elenor</td>
+                    <td>Sales Person</td>
+                    <td>@Chidi</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Chidi</td>
+                    <td>Professor</td>
+                    <td>@Elenor</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Tahani</td>
+                    <td>Jonalist</td>
+                    <td>@Jason</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Jason</td>
+                    <td>Electronic DJ</td>
+                    <td>@Tahani</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row">Total 4</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
 
-                <!-- code -->
-                <div style="display:none">
-                    <pre>
+          <!-- code -->
+          <div style="display: none">
+            <pre>
                         <code>
                             <!-- default table -->
                             <div class="table-wrap">
@@ -421,330 +427,414 @@
                             <!-- // -->
                         </code>
                     </pre>
+          </div>
+          <!-- //code -->
+        </section>
+        <!-- // -->
+        <!-- FORMS -->
+        <section class="section" id="forms">
+          <h2 class="subtitle">
+            <a href="#forms" class="location">#forms</a>
+          </h2>
+          <p class="decription">
+            form 태그 안에 fieldset 태그를 넣고 fieldset에는 legend를 넣는다.
+          </p>
+
+          <div class="result">
+            <h3 class="result__heading">Default Form</h3>
+            <form class="form">
+              <fieldset>
+                <legend>Default Form</legend>
+                <div class="form__group">
+                  <label for="iptEmail">Email</label>
+                  <input
+                    type="email"
+                    id="iptEmail"
+                    class="ipt ipt--email"
+                    placeholder="apple123@hosting.com"
+                  />
                 </div>
-                <!-- //code -->
-            </section>
-            <!-- // -->
-            <!-- FORMS -->
-            <section class="section" id="forms">
-                <h2 class="subtitle">
-                    <a href="#forms" class="location">#forms</a>
-                </h2>
-                <p class="decription">
-                    form 태그 안에 fieldset 태그를 넣고 fieldset에는 legend를 넣는다.
-                </p>
-
-                <div class="result">
-                    <h3 class="result__heading">
-                        Default Form
-                    </h3>
-                    <form class="form">
-                        <fieldset>
-                            <legend>Default Form</legend>
-                            <div class="form__group">
-                                <label for="iptEmail">Email</label>
-                                <input type="email" id="iptEmail" class="ipt ipt--email" placeholder="apple123@hosting.com">
-                            </div>
-                            <div class="form__group">
-                                <label for="iptPwd">Password</label>
-                                <input type="password" id="iptPwd" class="ipt ipt--pwd" placeholder="Enter your password(8-12)">
-                                <p class="form__guide">Form guide: Enter 8-12 mixed digit numbers, a-z alphabets</p>
-                            </div>
-                            <div class="form__group">
-                                <label for="slt">Default Selectbox</label>
-                                <select id="slt" class="slt">
-                                    <option value="default" selected>Select your city</option>
-                                    <option value="seoul">Seoul</option>
-                                    <option value="newyork">New York</option>
-                                    <option value="Toronto">Toronto</option>
-                                </select>
-                            </div>
-                            <div class="form__group form__group--file">
-                                <span>File Input</span>
-                                <input type="file" id="iptFile" class="ipt-file">
-                                <label for="iptFile">파일을 선택하세여</label>
-                            </div>
-                            <div class="form__group">
-                                <label for="ta">Textarea</label>
-                                <textarea id="ta" class="ta" placeholder="This is textarea part"></textarea>
-                            </div>
-                            <div class="form-radio">
-                                <span class="form-radio__label">Radio Buttons</span>
-                                <div class="form__group form__group--radio">
-                                    <input type="radio" name="defaultRadio" id="radio01" class="radio" checked>
-                                    <label for="radio01">Metropolitan 🌁</label>
-                                </div>
-                                <div class="form__group form__group--radio">
-                                    <input type="radio" name="defaultRadio" id="radio02" class="radio">
-                                    <label for="radio02">Rural ⛺</label>
-                                </div>
-                            </div>
-                            <div class="form__group">
-                                <input type="checkbox" id="iptChk" class="chk">
-                                <label for="iptChk">Just Check it. Nothing's gonna happened :P</label>
-                            </div>
-                        </fieldset>
-                        <input type="submit" class="ipt ipt--submit" value="submit">
-                    </form>
+                <div class="form__group">
+                  <label for="iptPwd">Password</label>
+                  <input
+                    type="password"
+                    id="iptPwd"
+                    class="ipt ipt--pwd"
+                    placeholder="Enter your password(8-12)"
+                  />
+                  <p class="form__guide">
+                    Form guide: Enter 8-12 mixed digit numbers, a-z alphabets
+                  </p>
                 </div>
-
-                <div class="result">
-                    <h3 class="result__heading">
-                        Disabled Form
-                    </h3>
-                    <form class="form">
-                        <fieldset>
-                            <legend>Disabled Form</legend>
-                            <div class="form__group">
-                                <label for="iptDText">Disabled input</label>
-                                <input type="text" id="iptDText" class="ipt" placeholder="Disabled input" disabled>
-                            </div>
-                            <div class="form__group">
-                                <label for="sltD">Disabled Selectbox</label>
-                                <select id="sltD" class="slt" disabled>
-                                    <option value="default" selected>Select your city</option>
-                                    <option value="seoul">Seoul</option>
-                                    <option value="newyork">New York</option>
-                                    <option value="Toronto">Toronto</option>
-                                </select>
-                            </div>
-                            <div class="form__group">
-                                <span>File Input</span>
-                                <input type="file" id="iptFileD" class="ipt-file" disabled>
-                                <label for="iptFileD">파일을 선택하세여</label>
-                            </div>
-                            <div class="form__group">
-                                <label for="taD">Textarea</label>
-                                <textarea id="taD" class="ta" placeholder="This is textarea part" disabled></textarea>
-                            </div>
-                            <div class="form-radio">
-                                <span class="form-radio__label">Radio Buttons</span>
-                                <div class="form__group form__group--radio">
-                                    <input type="radio" name="defaultRadio" id="radioD01" class="radio" disabled>
-                                    <label for="radioD01">Unchecked Radio Button</label>
-                                </div>
-                                <div class="form__group form__group--radio">
-                                    <input type="radio" name="defaultRadio" id="radioD02" class="radio" disabled checked>
-                                    <label for="radioD02">Checked Radio Button</label>
-                                </div>
-                            </div>
-                            <div class="form__group">
-                                <input type="checkbox" id="iptDChk" class="chk" disabled>
-                                <label for="iptDChk">Disabled Checkbox</label>
-                            </div>
-                            <div class="form__group">
-                                <input type="checkbox" id="iptDChked" class="chk" checked disabled>
-                                <label for="iptDChked">Disabled Checkbox - checked</label>
-                            </div>
-                        </fieldset>
-                        <input type="submit" class="ipt ipt--submit" value="submit" disabled>
-                    </form>
+                <div class="form__group">
+                  <label for="slt">Default Selectbox</label>
+                  <select id="slt" class="slt">
+                    <option value="default" selected>Select your city</option>
+                    <option value="seoul">Seoul</option>
+                    <option value="newyork">New York</option>
+                    <option value="Toronto">Toronto</option>
+                  </select>
                 </div>
-
-            </section>
-            <!-- // -->
-            <!-- ACCORDION -->
-            <section class="section" id="accordion">
-                <h2 class="subtitle">
-                    <a href="#accordion" class="location">#accordion</a>
-                </h2>
-
-                <div class="result">
-                    <ul class="accordion">
-                        <li>
-                            <div class="accordion__header">
-                                Accordion Menu #1
-                            </div>
-                            <div class="accordion__content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque tempora cupiditate, impedit aliquam quas quaerat explicabo aspernatur eius, labore rem id dignissimos! Quo tenetur, adipisci quam quos blanditiis doloremque ullam.
-                            </div>
-                        </li>
-                        <li>
-                            <div class="accordion__header">
-                                Accordion Menu #2
-                            </div>
-                            <div class="accordion__content">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo nulla iusto laborum minus beatae soluta blanditiis quod dolorum alias atque! Soluta eum aspernatur, minus sunt accusamus impedit quas? Accusamus, voluptate?
-                            </div>
-                        </li>
-                        <li>
-                            <div class="accordion__header">
-                                Accordion Menu #3
-                            </div>
-                            <div class="accordion__content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, autem? Deserunt magnam eaque asperiores non consequatur delectus unde laboriosam, corporis fugit eos eius aspernatur. Praesentium, aliquam voluptatibus. Deserunt, eligendi? At!
-                            </div>
-                        </li>
-                    </ul>
+                <div class="form__group form__group--file">
+                  <span>File Input</span>
+                  <input type="file" id="iptFile" class="ipt-file" />
+                  <label for="iptFile">파일을 선택하세여</label>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- BUTTONS -->
-            <section class="section" id="buttons">
-                <h2 class="subtitle">
-                    <a href="#buttons" class="location">#buttons</a>
-                </h2>
-
-                <div class="result">
-                    <h3 class="result__heading">Default Buttons</h3>
-                    <div class="result__item">
-                        <button type="button" class="btn">Default</button>
-                        <button type="button" class="btn btn--primary">Default(point-color)</button>
-                        <button type="button" class="btn btn--primary" disabled>Default(disabled)</button>
-                    </div>
+                <div class="form__group">
+                  <label for="ta">Textarea</label>
+                  <textarea
+                    id="ta"
+                    class="ta"
+                    placeholder="This is textarea part"
+                  ></textarea>
                 </div>
-
-                <div class="result">
-                    <h3 class="result__heading">Block Buttons</h3>
-                    <div class="result__item">
-                        <button type="button" class="btn btn--full">Default</button>
-                        <button type="button" class="btn btn--full btn--primary">Default(point-color)</button>
-                        <button type="button" class="btn btn--full btn--primary" disabled>Default(disabled)</button>
-                    </div>
+                <div class="form-radio">
+                  <span class="form-radio__label">Radio Buttons</span>
+                  <div class="form__group form__group--radio">
+                    <input
+                      type="radio"
+                      name="defaultRadio"
+                      id="radio01"
+                      class="radio"
+                      checked
+                    />
+                    <label for="radio01">Metropolitan 🌁</label>
+                  </div>
+                  <div class="form__group form__group--radio">
+                    <input
+                      type="radio"
+                      name="defaultRadio"
+                      id="radio02"
+                      class="radio"
+                    />
+                    <label for="radio02">Rural ⛺</label>
+                  </div>
                 </div>
-
-                <div class="result">
-                    <h3 class="result__heading">Half Block Buttons</h3>
-                    <div class="result__item">
-                        <div class="btns">
-                            <button type="button" class="btn btn--half">Default</button>
-                            <button type="button" class="btn btn--half btn--primary">Default(point-color)</button>
-                        </div>
-                        <div class="btns">
-                            <button type="button" class="btn btn--half">Default</button>
-                            <button type="button" class="btn btn--half btn--primary">Default(point-color)</button>
-                            <button type="button" class="btn btn--half btn--primary" disabled>Default(disabled)</button>
-                        </div>
-                    </div>
+                <div class="form__group">
+                  <input type="checkbox" id="iptChk" class="chk" />
+                  <label for="iptChk"
+                    >Just Check it. Nothing's gonna happened :P</label
+                  >
                 </div>
+              </fieldset>
+              <input type="submit" class="ipt ipt--submit" value="submit" />
+            </form>
+          </div>
 
-                <p class="description">
-                    *반응형, 모바일에서 Block Buttons, Half Block Buttons를 사용
-                </p>
-            </section>
-            <!-- // -->
-            <!-- DROPDOWN -->
-            <section class="section" id="dropdown">
-                <h2 class="subtitle">
-                    <a href="#dropdown" class="location">#dropdown</a>
-                </h2>
-
-                <div class="result">
-
+          <div class="result">
+            <h3 class="result__heading">Disabled Form</h3>
+            <form class="form">
+              <fieldset>
+                <legend>Disabled Form</legend>
+                <div class="form__group">
+                  <label for="iptDText">Disabled input</label>
+                  <input
+                    type="text"
+                    id="iptDText"
+                    class="ipt"
+                    placeholder="Disabled input"
+                    disabled
+                  />
                 </div>
-            </section>
-            <!-- // -->
-            <!-- LIST -->
-            <section class="section" id="list">
-                <h2 class="subtitle">
-                    <a href="#list" class="location">#list</a>
-                </h2>
-
-                <div class="result">
-
+                <div class="form__group">
+                  <label for="sltD">Disabled Selectbox</label>
+                  <select id="sltD" class="slt" disabled>
+                    <option value="default" selected>Select your city</option>
+                    <option value="seoul">Seoul</option>
+                    <option value="newyork">New York</option>
+                    <option value="Toronto">Toronto</option>
+                  </select>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- MODAL -->
-            <section class="section" id="modal">
-                <h2 class="subtitle">
-                    <a href="#modal" class="location">#modal</a>
-                </h2>
-
-                <div class="result">
-                    <button type="button" id="btnModal" class="btn btn--primary">Popup</button>
-
-                    <div class="modal" data-modal="modal01">
-                        <div class="modal__wrap">
-                            <div class="modal__header">
-                                <h3 class="modal__title">Modal Title</h3>
-                                <button type="button" class="btn-modal" data-modal="modal01">Close</button>
-                            </div>
-                            <div class="modal__content">
-                                <div class="modal__inner">
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores exercitationem, voluptatibus ducimus distinctio illum cum deserunt nulla error accusantium aperiam repudiandae laborum, esse autem asperiores explicabo repellat amet cupiditate officia?
-                                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis quo a modi ea consequuntur exercitationem, vel provident eaque, molestiae iste dignissimos nobis dolores repellendus odio dolore maiores facere distinctio?
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal__footer">
-
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="form__group">
+                  <span>File Input</span>
+                  <input type="file" id="iptFileD" class="ipt-file" disabled />
+                  <label for="iptFileD">파일을 선택하세여</label>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- NAVIGATION -->
-            <section class="section" id="navigation">
-                <h2 class="subtitle">
-                    <a href="#navigation" class="location">#navigation</a>
-                </h2>
-
-                <div class="result">
-
+                <div class="form__group">
+                  <label for="taD">Textarea</label>
+                  <textarea
+                    id="taD"
+                    class="ta"
+                    placeholder="This is textarea part"
+                    disabled
+                  ></textarea>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- TAB -->
-            <section class="section" id="tab">
-                <h2 class="subtitle">
-                    <a href="#tab" class="location">#tab</a>
-                </h2>
-
-                <div class="result">
-
+                <div class="form-radio">
+                  <span class="form-radio__label">Radio Buttons</span>
+                  <div class="form__group form__group--radio">
+                    <input
+                      type="radio"
+                      name="defaultRadio"
+                      id="radioD01"
+                      class="radio"
+                      disabled
+                    />
+                    <label for="radioD01">Unchecked Radio Button</label>
+                  </div>
+                  <div class="form__group form__group--radio">
+                    <input
+                      type="radio"
+                      name="defaultRadio"
+                      id="radioD02"
+                      class="radio"
+                      disabled
+                      checked
+                    />
+                    <label for="radioD02">Checked Radio Button</label>
+                  </div>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- POPOVER -->
-            <section class="section" id="popover">
-                <h2 class="subtitle">
-                    <a href="#popover" class="location">#popover</a>
-                </h2>
-
-                <div class="result">
-
+                <div class="form__group">
+                  <input type="checkbox" id="iptDChk" class="chk" disabled />
+                  <label for="iptDChk">Disabled Checkbox</label>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- TOAST -->
-            <section class="section" id="toast">
-                <h2 class="subtitle">
-                    <a href="#toast" class="location">#toast</a>
-                </h2>
-
-                <div class="result">
-
+                <div class="form__group">
+                  <input
+                    type="checkbox"
+                    id="iptDChked"
+                    class="chk"
+                    checked
+                    disabled
+                  />
+                  <label for="iptDChked">Disabled Checkbox - checked</label>
                 </div>
-            </section>
-            <!-- // -->
-            <!-- REF -->
-            <section class="section" id="reference">
-                <h2 class="subtitle">
-                    <a href="#reference" class="location">#reference</a>
-                </h2>
+              </fieldset>
+              <input
+                type="submit"
+                class="ipt ipt--submit"
+                value="submit"
+                disabled
+              />
+            </form>
+          </div>
+        </section>
+        <!-- // -->
+        <!-- ACCORDION -->
+        <section class="section" id="accordion">
+          <h2 class="subtitle">
+            <a href="#accordion" class="location">#accordion</a>
+          </h2>
 
-                <div class="">
+          <div class="result">
+            <ul class="accordion">
+              <li>
+                <div class="accordion__header">Accordion Menu #1</div>
+                <div class="accordion__content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eaque tempora cupiditate, impedit aliquam quas quaerat
+                  explicabo aspernatur eius, labore rem id dignissimos! Quo
+                  tenetur, adipisci quam quos blanditiis doloremque ullam.
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">Accordion Menu #2</div>
+                <div class="accordion__content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo nulla iusto laborum minus beatae soluta blanditiis
+                  quod dolorum alias atque! Soluta eum aspernatur, minus sunt
+                  accusamus impedit quas? Accusamus, voluptate?
+                </div>
+              </li>
+              <li>
+                <div class="accordion__header">Accordion Menu #3</div>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente, autem? Deserunt magnam eaque asperiores non
+                  consequatur delectus unde laboriosam, corporis fugit eos eius
+                  aspernatur. Praesentium, aliquam voluptatibus. Deserunt,
+                  eligendi? At!
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- // -->
+        <!-- BUTTONS -->
+        <section class="section" id="buttons">
+          <h2 class="subtitle">
+            <a href="#buttons" class="location">#buttons</a>
+          </h2>
+
+          <div class="result">
+            <h3 class="result__heading">Default Buttons</h3>
+            <div class="result__item">
+              <button type="button" class="btn">Default</button>
+              <button type="button" class="btn btn--primary">
+                Default(point-color)
+              </button>
+              <button type="button" class="btn btn--primary" disabled>
+                Default(disabled)
+              </button>
+            </div>
+          </div>
+
+          <div class="result">
+            <h3 class="result__heading">Block Buttons</h3>
+            <div class="result__item">
+              <button type="button" class="btn btn--full">Default</button>
+              <button type="button" class="btn btn--full btn--primary">
+                Default(point-color)
+              </button>
+              <button type="button" class="btn btn--full btn--primary" disabled>
+                Default(disabled)
+              </button>
+            </div>
+          </div>
+
+          <div class="result">
+            <h3 class="result__heading">Half Block Buttons</h3>
+            <div class="result__item">
+              <div class="btns">
+                <button type="button" class="btn btn--half">Default</button>
+                <button type="button" class="btn btn--half btn--primary">
+                  Default(point-color)
+                </button>
+              </div>
+              <div class="btns">
+                <button type="button" class="btn btn--half">Default</button>
+                <button type="button" class="btn btn--half btn--primary">
+                  Default(point-color)
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--half btn--primary"
+                  disabled
+                >
+                  Default(disabled)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p class="description">
+            *반응형, 모바일에서 Block Buttons, Half Block Buttons를 사용
+          </p>
+        </section>
+        <!-- // -->
+        <!-- DROPDOWN -->
+        <section class="section" id="dropdown">
+          <h2 class="subtitle">
+            <a href="#dropdown" class="location">#dropdown</a>
+          </h2>
+
+          <div class="result"></div>
+        </section>
+        <!-- // -->
+        <!-- LIST -->
+        <section class="section" id="list">
+          <h2 class="subtitle">
+            <a href="#list" class="location">#list</a>
+          </h2>
+
+          <div class="result"></div>
+        </section>
+        <!-- // -->
+        <!-- MODAL -->
+        <section class="section" id="modal">
+          <h2 class="subtitle">
+            <a href="#modal" class="location">#modal</a>
+          </h2>
+
+          <div class="result">
+            <button type="button" id="btnModal" class="btn btn--primary">
+              Popup
+            </button>
+
+            <div class="modal" data-modal="modal01">
+              <div class="modal__wrap">
+                <div class="modal__header">
+                  <h3 class="modal__title">Modal Title</h3>
+                  <button type="button" class="btn-modal" data-modal="modal01">
+                    Close
+                  </button>
+                </div>
+                <div class="modal__content">
+                  <div class="modal__inner">
                     <p>
-                        컴포넌트 순서 참고 : Bootstrap v5.1 (<a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">https://getbootstrap.com/docs/5.1/getting-started/introduction/</a>)
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolores exercitationem, voluptatibus ducimus distinctio
+                      illum cum deserunt nulla error accusantium aperiam
+                      repudiandae laborum, esse autem asperiores explicabo
+                      repellat amet cupiditate officia?
+                      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur corporis quo a modi ea consequuntur
+                      exercitationem, vel provident eaque, molestiae iste
+                      dignissimos nobis dolores repellendus odio dolore maiores
+                      facere distinctio?
                     </p>
-                    <p>
-                        웹 접근성 관련 색상 참고: Material Design (<a href="https://material.io/resources/color/#!/?view.left=0&view.right=0" target="_blank">https://material.io/resources/color/#!/?view.left=0&view.right=0</a>)
-                    </p>
+                  </div>
                 </div>
-            </section>
-            <!-- // -->
-        </div>
-        <footer id="footer" class="footer">
+                <div class="modal__footer"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- // -->
+        <!-- NAVIGATION -->
+        <section class="section" id="navigation">
+          <h2 class="subtitle">
+            <a href="#navigation" class="location">#navigation</a>
+          </h2>
 
-        </footer>
+          <div class="result"></div>
+        </section>
+        <!-- // -->
+        <!-- TAB -->
+        <section class="section" id="tab">
+          <h2 class="subtitle">
+            <a href="#tab" class="location">#tab</a>
+          </h2>
+
+          <div class="result"></div>
+        </section>
+        <!-- // -->
+        <!-- POPOVER -->
+        <section class="section" id="popover">
+          <h2 class="subtitle">
+            <a href="#popover" class="location">#popover</a>
+          </h2>
+
+          <div class="result"></div>
+        </section>
+        <!-- // -->
+        <!-- TOAST -->
+        <section class="section" id="toast">
+          <h2 class="subtitle">
+            <a href="#toast" class="location">#toast</a>
+          </h2>
+
+          <div class="result"></div>
+        </section>
+        <!-- // -->
+        <!-- REF -->
+        <section class="section" id="reference">
+          <h2 class="subtitle">
+            <a href="#reference" class="location">#reference</a>
+          </h2>
+
+          <div class="">
+            <p>
+              컴포넌트 순서 참고 : Bootstrap v5.1 (<a
+                href="https://getbootstrap.com/docs/5.1/getting-started/introduction/"
+                target="_blank"
+                >https://getbootstrap.com/docs/5.1/getting-started/introduction/</a
+              >)
+            </p>
+            <p>
+              웹 접근성 관련 색상 참고: Material Design (<a
+                href="https://material.io/resources/color/#!/?view.left=0&view.right=0"
+                target="_blank"
+                >https://material.io/resources/color/#!/?view.left=0&view.right=0</a
+              >)
+            </p>
+          </div>
+        </section>
+        <!-- // -->
+      </div>
+      <footer id="footer" class="footer"></footer>
     </div>
 
-    <script src="./scripts/common.js"></script>
-</body>
+    <script src="./assets/scripts/common.js"></script>
+  </body>
 </html>
