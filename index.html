@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Components</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/felipec.min.css"
+    />
     <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   </head>
   <body>
@@ -55,19 +60,15 @@
           </div>
 
           <!-- code -->
-          <div style="display: none">
-            <pre>
-                        <code>
-                            <h1 class="title">Heading 1</h1>
-                            <h2 class="subtitle">Heading 2</h2>
-                            <p class="description">
-                                Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus hic culpa! Saepe, cupiditate ipsam. Beatae molestiae sit quasi officia eos, enim, mollitia repudiandae necessitatibus dignissimos quibusdam hic a! Suscipit?
-                            </p>
-                            <p class="description description--muted">
-                                Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non omnis doloribus vitae vel adipisci odio delectus, reprehenderit ipsum officiis inventore atque accusamus nobis perferendis iure cupiditate nemo eius praesentium.
-                            </p>
-                        </code>
-                    </pre>
+          <div>
+            <pre><code class="language-html">&lt;h1 class="title"&gt;Heading 1&lt;/h1&gt;
+&lt;h2 class="subtitle"&gt;Heading 2&lt;/h2&gt;
+&lt;p class="description"&gt;
+Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus hic culpa! Saepe, cupiditate ipsam. Beatae molestiae sit quasi officia eos, enim, mollitia repudiandae necessitatibus dignissimos quibusdam hic a! Suscipit?
+&lt;/p&gt;
+&lt;p class="description description--muted"&gt;
+Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non omnis doloribus vitae vel adipisci odio delectus, reprehenderit ipsum officiis inventore atque accusamus nobis perferendis iure cupiditate nemo eius praesentium.
+&lt;/p&gt;</code></pre>
           </div>
           <!-- //code -->
         </section>
@@ -257,177 +258,7 @@
           </div>
 
           <!-- code -->
-          <div style="display: none">
-            <pre>
-                        <code>
-                            <!-- default table -->
-                            <div class="table-wrap">
-                                <table class="table">
-                                    <caption>Deafult Table</caption>
-                                    <colgroup>
-                                        <col style="width:10%">
-                                        <col style="width:30%">
-                                        <col style="width:30%">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Job</th>
-                                            <th scope="col">Roommate</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Elenor</td>
-                                            <td>Sales Person</td>
-                                            <td>@Chidi</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Chidi</td>
-                                            <td>Professor</td>
-                                            <td>@Elenor</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Tahani</td>
-                                            <td>Jonalist</td>
-                                            <td>@Jason</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Jason</td>
-                                            <td>Electronic DJ</td>
-                                            <td>@Tahani</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="row">Total 4</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <!-- // -->
-                            <!-- striped table -->
-                            <div class="table-wrap">
-                                <table class="table table--striped">
-                                    <caption>Striped Table</caption>
-                                    <colgroup>
-                                        <col style="width:10%">
-                                        <col style="width:30%">
-                                        <col style="width:30%">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Job</th>
-                                            <th scope="col">Roommate</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Elenor</td>
-                                            <td>Sales Person</td>
-                                            <td>@Chidi</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Chidi</td>
-                                            <td>Professor</td>
-                                            <td>@Elenor</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Tahani</td>
-                                            <td>Jonalist</td>
-                                            <td>@Jason</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Jason</td>
-                                            <td>Electronic DJ</td>
-                                            <td>@Tahani</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="row">Total 4</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <!-- // -->
-                            <!-- hoverable table -->
-                            <div class="table-wrap">
-                                <table class="table table--hover">
-                                    <caption>Hoverable table</caption>
-                                    <colgroup>
-                                        <col style="width:10%">
-                                        <col style="width:30%">
-                                        <col style="width:30%">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Job</th>
-                                            <th scope="col">Roommate</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Elenor</td>
-                                            <td>Sales Person</td>
-                                            <td>@Chidi</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Chidi</td>
-                                            <td>Professor</td>
-                                            <td>@Elenor</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Tahani</td>
-                                            <td>Jonalist</td>
-                                            <td>@Jason</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Jason</td>
-                                            <td>Electronic DJ</td>
-                                            <td>@Tahani</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th scope="row">Total 4</th>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <!-- // -->
-                        </code>
-                    </pre>
-          </div>
+          <pre><code class="language-html">...</code></pre>
           <!-- //code -->
         </section>
         <!-- // -->
@@ -836,5 +667,8 @@
     </div>
 
     <script src="./assets/scripts/common.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
