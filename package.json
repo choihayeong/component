@@ -1,10 +1,13 @@
 {
   "name": "component",
-  "description": "popover - bootstrap5를 참고하여 javascript DOM selector 활용\r -> 관련 링크 (https://getbootstrap.com/docs/5.1/components/popovers/)",
+  "description": "components for personal usage",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,9 @@
     "url": "https://github.com/choihayeong/component/issues"
   },
   "homepage": "https://github.com/choihayeong/component#readme",
-  "dependencies": {
-    "gh-pages": "^4.0.0"
+  "devDependencies": {
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5"
   }
 }
