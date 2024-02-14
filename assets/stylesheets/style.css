@@ -136,8 +136,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard Black"),
-    url(/assets/fonts/Pretendard-Black.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-Black.woff) format("woff");
+    url("/assets/fonts/Pretendard-Black.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-Black.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -145,8 +145,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard ExtraBold"),
-    url(/assets/fonts/Pretendard-ExtraBold.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-ExtraBold.woff) format("woff");
+    url("/assets/fonts/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-ExtraBold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -154,8 +154,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard Bold"),
-    url(/assets/fonts/Pretendard-Bold.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-Bold.woff) format("woff");
+    url("/assets/fonts/Pretendard-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -163,8 +163,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard SemiBold"),
-    url(/assets/fonts/Pretendard-SemiBold.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-SemiBold.woff) format("woff");
+    url("/assets/fonts/Pretendard-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -172,8 +172,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard Medium"),
-    url(/assets/fonts/Pretendard-Medium.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-Medium.woff) format("woff");
+    url("/assets/fonts/Pretendard-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -181,8 +181,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard Regular"),
-    url(/assets/fonts/Pretendard-Regular.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-Regular.woff) format("woff");
+    url("/assets/fonts/Pretendard-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -190,8 +190,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard Light"),
-    url(/assets/fonts/Pretendard-Light.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-Light.woff) format("woff");
+    url("/assets/fonts/Pretendard-Light.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -199,8 +199,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard ExtraLight"),
-    url(/assets/fonts/Pretendard-ExtraLight.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-ExtraLight.woff) format("woff");
+    url("/assets/fonts/Pretendard-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-ExtraLight.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
@@ -208,8 +208,8 @@ caption,
   font-display: swap;
   src:
     local("Pretendard Thin"),
-    url(/assets/fonts/Pretendard-Thin.woff2) format("woff2"),
-    url(/assets/fonts/Pretendard-Thin.woff) format("woff");
+    url("/assets/fonts/Pretendard-Thin.woff2") format("woff2"),
+    url("/assets/fonts/Pretendard-Thin.woff") format("woff");
 }
 @font-face {
   font-family: "Raleway";
@@ -236,31 +236,38 @@ caption,
   font-weight: bold;
   src: url("/assets/fonts/raleway-bold.woff") format("woff");
 }
+.hljs {
+  display: block;
+  padding: 20px;
+  font-family:
+    "Source Code Pro",
+    Consolas,
+    Monaco,
+    Andale Mono,
+    Ubuntu Mono,
+    monospace;
+  font-size: 1rem;
+}
+
 /* common */
 body {
   font-family: "Raleway", "Pretendard", "Noto Sans KR", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
 }
 
 .dim {
-  overflow-y: scroll;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -270,9 +277,13 @@ body {
 
 .location {
   display: inline-block;
-  padding: 10px 0;
+  padding: 0.5rem 0;
   color: var(--pointColor);
   text-transform: uppercase;
+}
+
+.code-block {
+  margin-top: 1rem;
 }
 
 .wrap {
@@ -281,31 +292,31 @@ body {
 }
 
 .header {
-  padding: 30px;
+  padding: 2rem;
   text-align: center;
 }
 
 .footer {
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
-.section ~ .section {
-  margin-top: 30px;
+.section {
+  margin-top: 6rem;
 }
 
 .result {
-  margin-top: 10px;
+  margin-top: 3.5rem;
 }
 
 .result__item {
-  padding: 10px 0;
+  padding: 0.5rem 0;
   border-bottom: 1px solid var(--defaultGray);
 }
 
 .result__heading {
   padding: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -317,7 +328,7 @@ body {
 
 .table th,
 .table td {
-  padding: 10px;
+  padding: 0.5rem;
   border-bottom: 1px solid var(--defaultGray);
   text-align: left;
 }
@@ -344,7 +355,7 @@ body {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--defaultGray);
-  border-radius: 5px;
+  border-radius: 0.25rem;
   background-color: var(--white);
 }
 
@@ -355,7 +366,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
 }
 
 .ipt::-moz-placeholder,
@@ -374,10 +385,10 @@ body {
 }
 
 .chk {
-  margin-right: 10px;
-  padding: 10px;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
   border: 1px solid var(--defaultGray);
-  border-radius: 5px;
+  border-radius: 0.25rem;
   vertical-align: top;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -388,13 +399,13 @@ body {
   border-color: var(--pointColor);
   background: var(--pointColor) url("/assets/icons/icon_chk.svg") no-repeat
     center;
-  background-size: 16px 16px;
+  background-size: 1rem;
 }
 
 .form {
-  padding: 30px;
+  padding: 2rem;
   border: 1px solid var(--defaultGray);
-  border-radius: 5px;
+  border-radius: 0.25rem;
 }
 
 .form-radio__label {
@@ -402,7 +413,7 @@ body {
 }
 
 .form__group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .form__group--radio {
@@ -513,6 +524,40 @@ body {
 }
 
 /* ACCORDION */
+details ~ details {
+  margin-top: -2px;
+}
+
+details[open] summary {
+  color: #fff;
+  background-color: #aaa;
+}
+
+summary {
+  border: 2px solid #ccc;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: #fafafa;
+  list-style: none;
+  transition: all 0.4s ease-out;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:hover,
+summary:focus {
+  color: #fff;
+  background-color: #aaa;
+  outline: none;
+}
+
+.accordion__contents {
+  padding: 10px 30px 20px;
+}
+
 .accordion > li ~ li {
   margin-top: 10px;
 }
@@ -559,48 +604,87 @@ body {
 }
 
 /* BUTTONS */
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.btn-group > * {
+  flex: 1;
+}
+.btn-group ~ .btn-group {
+  margin-top: 1rem;
+}
+
 .btn {
   padding: 10px;
   border: 1px solid var(--pointColor);
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-out;
 }
-
-.btn--primary {
-  color: var(--white);
-  border-color: var(--pointColor);
-  background-color: var(--pointColor);
-}
-
-.btn--primary:hover {
-  border-color: var(--darkColor);
-  background-color: var(--darkColor);
-}
-
 .btn--full {
   width: 100%;
 }
-
 .btn--full ~ .btn--full {
-  margin-top: 10px;
+  margin-top: 0.5rem;
 }
-
-.btns {
-  display: flex;
-  gap: 10px;
+.btn--primary {
+  color: var(--white);
+  border-color: var(--btn-primary-color, var(--pointColor));
+  background-color: var(--btn-primary-color, var(--pointColor));
 }
-
-.btns ~ .btns {
-  margin-top: 15px;
-}
-
-.btn--half {
-  flex: 1;
+.btn--primary:hover {
+  border-color: var(--btn-dark-color, var(--darkColor));
+  background-color: var(--btn-dark-color, var(--darkColor));
 }
 
 [disabled].btn {
   border-color: var(--lightColor);
   background-color: var(--lightColor);
+}
+
+/* DROPDOWN */
+.dropdowns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dropdown-wrap {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  min-width: 10rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background: #fff;
+  z-index: 1;
+}
+.dropdown.active {
+  display: block;
+}
+
+/* LIST */
+.bullet-list > li {
+  position: relative;
+  padding-left: 0.75rem;
+}
+.bullet-list > li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0.25rem;
+  height: 0.25rem;
+  margin-top: -2px;
+  border-radius: 50%;
+  background-color: #777;
+}
+.bullet-list > li ~ li {
+  margin-top: var(--bullet-list-item-gap, 0.25rem);
 }
 
 /* MODAL */
@@ -613,11 +697,9 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 .modal.active {
   display: block;
 }
-
 .modal__wrap {
   position: absolute;
   top: 50%;
@@ -630,42 +712,35 @@ body {
   height: calc(100vh - 60px);
   overflow: hidden;
 }
-
 .modal__header {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
-
 .modal__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
-
-.btn-modal {
+.modal__close {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 30px;
-  height: 30px;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
   text-indent: -999em;
-  background-color: #ccc;
+  background: url("/assets/icons/icon-close.svg");
 }
-
 .modal__content {
   height: calc(100% - 60px);
 }
-
 .modal__inner {
   height: 100%;
-  padding-right: 15px;
+  padding-right: 1rem;
   overflow-y: scroll;
 }
-
 .modal__inner::-webkit-scrollbar {
   width: 5px;
   border-radius: 3px;
   background-color: var(--Gray03);
 }
-
 .modal__inner::-webkit-scrollbar-thumb {
   width: 5px;
   border-radius: 3px;

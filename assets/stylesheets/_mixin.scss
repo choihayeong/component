@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@mixin default-font() {
+  font-family: "Pretendard", sans-serif;
+}
+
+@mixin system-font() {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+@mixin thematic-font() {
+  font-family: "Raleway", sans-serif;
+}

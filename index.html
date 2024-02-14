@@ -18,16 +18,22 @@
         <h1 class="title">Personal Components</h1>
       </header>
       <div class="container">
+        <p class="description">
+          기본적인 css 방법론 : BEM(Block__Modifier--Element)과
+          OOCSS(Object-Oriented CSS)를 적절하게 사용
+        </p>
         <!-- TYPOGRAPHY -->
         <section class="section" id="typography">
           <h2 class="subtitle">
             <a href="#typography" class="location">#typography</a>
           </h2>
           <p class="description">
+            <strong>- Font Guide -</strong> <br />
             font-family:'Raleway','Pretendard'; <br />
             default(description) - font-size:16px, <br />
             heading1(title) - font-size:36px, <br />
             heading2(subtitle) - font-size:24px, <br />
+            heading3 - font-size:18px, <br />
             muted-text(muted) - color:#777
           </p>
 
@@ -60,7 +66,7 @@
           </div>
 
           <!-- code -->
-          <div>
+          <div class="code-block">
             <pre><code class="language-html">&lt;h1 class="title"&gt;Heading 1&lt;/h1&gt;
 &lt;h2 class="subtitle"&gt;Heading 2&lt;/h2&gt;
 &lt;p class="description"&gt;
@@ -70,7 +76,7 @@ Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet neces
 Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non omnis doloribus vitae vel adipisci odio delectus, reprehenderit ipsum officiis inventore atque accusamus nobis perferendis iure cupiditate nemo eius praesentium.
 &lt;/p&gt;</code></pre>
           </div>
-          <!-- //code -->
+          <!-- // -->
         </section>
         <!-- // -->
         <!-- TABLES -->
@@ -79,7 +85,7 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             <a href="#tables" class="location">#tables</a>
           </h2>
           <p class="description">
-            table 태그 안에 caption태그를 넣는다. <br />
+            기본적으로 table 태그 안에 caption태그를 넣는다. <br />
           </p>
 
           <div class="result">
@@ -119,13 +125,13 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
                   <tr>
                     <th scope="row">3</th>
                     <td>Tahani</td>
-                    <td>Jonalist</td>
+                    <td>Journalist</td>
                     <td>@Jason</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>Jason</td>
-                    <td>Electronic DJ</td>
+                    <td>Dancer/Electronic DJ</td>
                     <td>@Tahani</td>
                   </tr>
                 </tbody>
@@ -177,13 +183,13 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
                   <tr>
                     <th scope="row">3</th>
                     <td>Tahani</td>
-                    <td>Jonalist</td>
+                    <td>Journalist</td>
                     <td>@Jason</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>Jason</td>
-                    <td>Electronic DJ</td>
+                    <td>Dancer/Electronic DJ</td>
                     <td>@Tahani</td>
                   </tr>
                 </tbody>
@@ -235,13 +241,13 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
                   <tr>
                     <th scope="row">3</th>
                     <td>Tahani</td>
-                    <td>Jonalist</td>
+                    <td>Journalist</td>
                     <td>@Jason</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>Jason</td>
-                    <td>Electronic DJ</td>
+                    <td>Dancer/Electronic DJ</td>
                     <td>@Tahani</td>
                   </tr>
                 </tbody>
@@ -256,10 +262,6 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               </table>
             </div>
           </div>
-
-          <!-- code -->
-          <pre><code class="language-html">...</code></pre>
-          <!-- //code -->
         </section>
         <!-- // -->
         <!-- FORMS -->
@@ -445,7 +447,71 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             <a href="#accordion" class="location">#accordion</a>
           </h2>
 
+          <p>&lt;details&gt;와 &lt;summary&gt;를 이용하여 만들 수 있음</p>
+
           <div class="result">
+            <h3 class="result__heading">New Code</h3>
+            <div class="result__item">
+              <details class="accordion__item" open>
+                <summary class="accordion__title">Accordion title #01</summary>
+                <div class="accordion__contents">
+                  Dolorem eligendi veritatis magni molestias inventore, eveniet
+                  a amet reiciendis! Possimus doloribus quos laboriosam nobis
+                  dicta quidem sunt dignissimos at doloremque eligendi.
+                </div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__title">Accordion title #02</summary>
+                <div class="accordion__contents">
+                  Obcaecati quam quos nostrum necessitatibus nesciunt repellat
+                  minus laborum velit ex fugiat quasi hic dolor, dignissimos
+                  quibusdam cum perspiciatis corporis iure aliquam.
+                </div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__title">Accordion title #03</summary>
+                <div class="accordion__contents">
+                  Sequi corporis quos asperiores eum distinctio. Cum nam odio
+                  veniam dicta reprehenderit autem sit dolores blanditiis modi
+                  dolore, ipsa ut temporibus aliquam.
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;details class="accordion__item" open&gt;
+  &lt;summary class="accordion__title"&gt;Accordion title #01&lt;/summary&gt;
+  &lt;div class="accordion__contents"&gt;
+    Dolorem eligendi veritatis magni molestias inventore, 
+    eveniet a amet reiciendis! 
+    Possimus doloribus quos laboriosam nobis dicta 
+    quidem sunt dignissimos at doloremque eligendi.
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class="accordion__item"&gt;
+  &lt;summary class="accordion__title"&gt;Accordion title #02&lt;/summary&gt;
+  &lt;div class="accordion__contents"&gt;
+    Obcaecati quam quos nostrum necessitatibus nesciunt 
+    repellat minus laborum velit ex fugiat quasi hic dolor, 
+    dignissimos quibusdam cum perspiciatis corporis iure aliquam.
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class="accordion__item"&gt;
+  &lt;summary class="accordion__title"&gt;Accordion title #03&lt;/summary&gt;
+  &lt;div class="accordion__contents"&gt;
+    Sequi corporis quos asperiores eum distinctio. 
+    Cum nam odio veniam dicta reprehenderit 
+    autem sit dolores blanditiis modi dolore, 
+    ipsa ut temporibus aliquam.
+  &lt;/div&gt;
+&lt;/details&gt;</code></pre>
+          </div>
+          <!-- // -->
+
+          <div class="result">
+            <h3 class="result__heading">Previous Code</h3>
             <ul class="accordion">
               <li>
                 <div class="accordion__header">Accordion Menu #1</div>
@@ -477,6 +543,41 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               </li>
             </ul>
           </div>
+
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;ul class="accordion"&gt;
+  &lt;li&gt;
+    &lt;div class="accordion__header"&gt;Accordion Menu #1&lt;/div&gt;
+    &lt;div class="accordion__content"&gt;
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Eaque tempora cupiditate, impedit aliquam quas quaerat
+      explicabo aspernatur eius, labore rem id dignissimos! Quo
+      tenetur, adipisci quam quos blanditiis doloremque ullam.
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class="accordion__header"&gt;Accordion Menu #2&lt;/div&gt;
+    &lt;div class="accordion__content"&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Explicabo nulla iusto laborum minus beatae soluta blanditiis
+      quod dolorum alias atque! Soluta eum aspernatur, minus sunt
+      accusamus impedit quas? Accusamus, voluptate?
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class="accordion__header"&gt;Accordion Menu #3&lt;/div&gt;
+    &lt;div class="accordion__content"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Sapiente, autem? Deserunt magnam eaque asperiores non
+      consequatur delectus unde laboriosam, corporis fugit eos eius
+      aspernatur. Praesentium, aliquam voluptatibus. Deserunt,
+      eligendi? At!
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </div>
+          <!-- // -->
         </section>
         <!-- // -->
         <!-- BUTTONS -->
@@ -498,6 +599,18 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             </div>
           </div>
 
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;button type="button" class="btn"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn--primary"&gt;
+  Default(point-color)
+&lt;/button&gt;
+&lt;button type="button" class="btn btn--primary" disabled&gt;
+  Default(disabled)
+&lt;/button&gt;</code></pre>
+          </div>
+          <!-- // -->
+
           <div class="result">
             <h3 class="result__heading">Block Buttons</h3>
             <div class="result__item">
@@ -511,25 +624,33 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             </div>
           </div>
 
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;button type="button" class="btn btn--full"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn--full btn--primary"&gt;
+  Default(point-color)
+&lt;/button&gt;
+&lt;button type="button" class="btn btn--full btn--primary" disabled&gt;
+  Default(disabled)
+&lt;/button&gt;</code></pre>
+          </div>
+          <!-- // -->
+
           <div class="result">
             <h3 class="result__heading">Half Block Buttons</h3>
             <div class="result__item">
-              <div class="btns">
-                <button type="button" class="btn btn--half">Default</button>
-                <button type="button" class="btn btn--half btn--primary">
+              <div class="btn-group">
+                <button type="button" class="btn">Default</button>
+                <button type="button" class="btn btn--primary">
                   Default(point-color)
                 </button>
               </div>
-              <div class="btns">
-                <button type="button" class="btn btn--half">Default</button>
-                <button type="button" class="btn btn--half btn--primary">
+              <div class="btn-group">
+                <button type="button" class="btn">Default</button>
+                <button type="button" class="btn btn--primary">
                   Default(point-color)
                 </button>
-                <button
-                  type="button"
-                  class="btn btn--half btn--primary"
-                  disabled
-                >
+                <button type="button" class="btn btn--primary" disabled>
                   Default(disabled)
                 </button>
               </div>
@@ -539,6 +660,28 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
           <p class="description">
             *반응형, 모바일에서 Block Buttons, Half Block Buttons를 사용
           </p>
+
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn"&gt;Default&lt;/button&gt;
+  &lt;button type="button" class="btn btn--primary"&gt;
+    Default(point-color)
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn"&gt;Default&lt;/button&gt;
+  &lt;button type="button" class="btn btn--primary"&gt;
+    Default(point-color)
+  &lt;/button&gt;
+  &lt;button type="button" class="btn btn--primary" disabled&gt;
+    Default(disabled)
+  &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+          <!-- // -->
         </section>
         <!-- // -->
         <!-- DROPDOWN -->
@@ -547,7 +690,110 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             <a href="#dropdown" class="location">#dropdown</a>
           </h2>
 
-          <div class="result"></div>
+          <div class="result">
+            <h3 class="result__heading">Single Dropdown</h3>
+            <div class="result__item">
+              <div class="dropdown-wrap">
+                <button
+                  type="button"
+                  data-dropdown
+                  class="btn btn--primary btn--dropdown"
+                >
+                  Default
+                  <small>▼</small>
+                </button>
+
+                <ul class="dropdown">
+                  <li>Seoul</li>
+                  <li>Busan</li>
+                  <li>Incheon</li>
+                  <li>Daegu</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;button type="button" data-dropdown class="btn btn--primary btn--dropdown"&gt;Default 
+  &lt;small&gt;▼&lt;/small&gt;
+&lt;/button&gt;
+&lt;ul class="dropdown"&gt;
+  &lt;li&gt;Seoul&lt;/li&gt;
+  &lt;li&gt;Busan&lt;/li&gt;
+  &lt;li&gt;Incheon&lt;/li&gt;
+  &lt;li&gt;Daegu&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </div>
+          <!-- // -->
+
+          <div class="result">
+            <h3 class="result__heading">Multiple Dropdown</h3>
+            <div class="result__item dropdowns">
+              <div class="dropdown-wrap">
+                <button
+                  type="button"
+                  data-dropdown
+                  class="btn btn--primary btn--dropdown"
+                >
+                  Multi Part#1
+                  <small>▼</small>
+                </button>
+
+                <ul class="dropdown">
+                  <li>Seoul</li>
+                  <li>Hong Kong</li>
+                  <li>Singapore</li>
+                  <li>Vancouver</li>
+                </ul>
+              </div>
+
+              <div
+                class="dropdown-wrap"
+                style="--btn-primary-color: #8fdbff; --btn-dark-color: #007bcb"
+              >
+                <button
+                  type="button"
+                  data-dropdown
+                  class="btn btn--primary btn--dropdown"
+                >
+                  Multi Part#2
+                  <small>▼</small>
+                </button>
+
+                <ul class="dropdown">
+                  <li>Seoul</li>
+                  <li>Busan</li>
+                  <li>Incheon</li>
+                  <li>Daejeon</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;button type="button" data-dropdown class="btn btn--primary btn--dropdown"&gt;Multi Part#1 
+  &lt;small&gt;▼&lt;/small&gt;
+&lt;/button&gt;
+&lt;ul class="dropdown"&gt;
+  &lt;li&gt;Korea&lt;/li&gt;
+  &lt;li&gt;Hong Kong&lt;/li&gt;
+  &lt;li&gt;Singapore&lt;/li&gt;
+  &lt;li&gt;Canada&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;button type="button" data-dropdown class="btn btn--primary btn--dropdown"&gt;Multi Part#2 
+  &lt;small&gt;▼&lt;/small&gt;
+&lt;/button&gt;
+&lt;ul class="dropdown"&gt;
+  &lt;li&gt;Seoul&lt;/li&gt;
+  &lt;li&gt;Busan&lt;/li&gt;
+  &lt;li&gt;Incheon&lt;/li&gt;
+  &lt;li&gt;Daejeon&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+          </div>
+          <!-- // -->
         </section>
         <!-- // -->
         <!-- LIST -->
@@ -556,7 +802,26 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             <a href="#list" class="location">#list</a>
           </h2>
 
-          <div class="result"></div>
+          <div class="result">
+            <h3 class="result__heading">Bullet List</h3>
+            <div class="result__item">
+              <ul class="bullet-list">
+                <li>
+                  Ut reprehenderit, enim ducimus culpa voluptatem nisi quisquam
+                  neque suscipit labore aut?
+                </li>
+                <li>
+                  Odio ipsam deserunt deleniti alias labore omnis doloribus
+                  possimus totam nisi delectus.
+                </li>
+                <li>
+                  Dignissimos culpa incidunt dolorum, asperiores quis animi,
+                  sunt odit praesentium eaque voluptates tempore qui quos
+                  doloribus rerum.
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
         <!-- // -->
         <!-- MODAL -->
@@ -570,12 +835,17 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               Popup
             </button>
 
-            <div class="modal" data-modal="modal01">
+            <div id="modal01" class="modal">
               <div class="modal__wrap">
                 <div class="modal__header">
                   <h3 class="modal__title">Modal Title</h3>
-                  <button type="button" class="btn-modal" data-modal="modal01">
-                    Close
+                  <button
+                    type="button"
+                    id="modalClose"
+                    class="modal__close btn-modal"
+                    data-modal="modal01"
+                  >
+                    <span class="blind">Close</span>
                   </button>
                 </div>
                 <div class="modal__content">
@@ -620,10 +890,10 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
           <div class="result"></div>
         </section>
         <!-- // -->
-        <!-- POPOVER -->
-        <section class="section" id="popover">
+        <!-- TOOLTIP -->
+        <section class="section" id="tooltip">
           <h2 class="subtitle">
-            <a href="#popover" class="location">#popover</a>
+            <a href="#tooltip" class="location">#tooltip</a>
           </h2>
 
           <div class="result"></div>
@@ -638,6 +908,50 @@ Muted Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
           <div class="result"></div>
         </section>
         <!-- // -->
+
+        <!-- DOCTYPE -->
+        <section class="section" id="doctype">
+          <h2 class="subtitle">
+            <a href="#doctype" class="location">#doctype</a>
+          </h2>
+          <!-- code -->
+          <div class="code-block">
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+  &lt;head&gt;
+    &lt;!-- meta --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"&gt;
+    &lt;meta name="description" content="디스크립션"&gt;
+    &lt;meta name="author" content="작성자"&gt;
+    &lt;meta name="keywords" content="키워드"&gt;
+    &lt;meta name="generator" content="에디터"&gt;
+    &lt;meta name="reply-to" content=""&gt;
+    &lt;meta name="date" content="날짜"&gt;
+    &lt;!-- twitter --&gt;
+    &lt;meta name="twitter:card" content="트위터 카드"&gt;
+    &lt;meta name="twitter:title" content="트위터 카드의 제목"&gt;
+    &lt;meta name="twitter:url" content="트위터 카드 링크"&gt;
+    &lt;meta name="twitter:image" content="트위터 카드 썸네일 이미지"&gt;
+    &lt;meta name="twitter:description" content="트위터 카드 디스크립션"&gt;
+    &lt;!-- open graph --&gt;
+    &lt;meta property="og:title" content="오픈 그래프 제목"&gt;
+    &lt;meta property="og:url" content="오픈 그래프 링크"&gt;
+    &lt;meta property="og:image" content="오픈 그래프 썸네일 이미지"&gt;
+    &lt;meta property="og:type" content="website"&gt;
+    &lt;meta property="og:description" content="오픈 그래프 디스크립션"&gt;
+    &lt;!-- title --&gt;
+    &lt;title&gt;Personal Web Components&lt;/title&gt;
+    &lt;!-- favicon --&gt;
+    &lt;link rel="icon" type="image/png" href="./favicon.png"&gt;
+  &lt;/head&gt;
+  &lt;!-- ... --&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+          <!-- // -->
+        </section>
+        <!-- // -->
+
         <!-- REF -->
         <section class="section" id="reference">
           <h2 class="subtitle">
